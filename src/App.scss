@@ -1,0 +1,152 @@
+.App {
+  text-align: center;
+  background-color: #F1F1F1; // 左右兩邊的灰色
+  display: flex;
+  justify-content: center;
+
+  .App-total {
+    width: 980px;
+    background-color: #F1F1F1; // 區塊背景為灰，header、main上加#fff
+    .App-header {
+      background-color: #fff;
+      height: 125px;
+    
+      .bar {
+        display: flex;
+
+        div:nth-child(3n+1) {
+          background-color: #A09E9F;
+          flex: auto;
+          height: 7px;
+        }
+        div:nth-child(3n+2) {
+          background-color: #F1969B;
+          flex: auto;
+          height: 7px;
+        }
+        div:nth-child(3n) {
+          background-color: #65C2C9;
+          flex: auto;
+          height: 7px;
+        }
+      }
+
+      .navbar {
+        height: 118px;
+        display: flex;
+        
+        .title {
+          font-size: 30px;
+          width: 435px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .title-front {
+            color:#656871;
+          }
+
+          .title-end {
+            color:#D35A51;
+          }
+        }
+
+        .link {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          width: 545px;
+
+          div:nth-child(1) {
+            color: #3397A6;
+          }
+        }
+      }
+    }
+
+    .main {
+      margin-top: 15px;
+      // height: 300px;
+      background-color: #fff;
+
+      .slogan {
+        height: 350px;
+        display: flex;
+        .slogan-space {
+          flex: 1;
+        }
+        .slogan-text {
+          flex: 2;
+          font-family: 'PT Serif', serif;
+          text-align:left;
+          .slogan-text-big {
+            color: #E05250;
+            font-weight: 600;
+            font-size: 50px;
+            margin: 40px 0 0;
+          }
+          .slogan-text-small {
+            color: #A09E9F;
+          }
+        }
+      }
+
+      .many-block {
+        display: flex;
+        
+        .level1 {
+          text-align:left;
+          display: flex;
+          justify-content: space-around;
+          
+          .text-title {
+            font-weight: 500;
+          }
+          .vertical-line {
+            border-left: thick solid #646464;
+          }
+
+          .level1-left {
+            display: flex;
+            .level1-left1 {
+              margin: 0 15px;
+              color: #A09E9F;
+              flex: 1;
+              font-size: 24px;
+              font-weight: 500;
+            }
+            .level1-left2 {
+              margin: 0 15px;
+              color: #646464;
+              flex: 1;
+            }
+          }
+          .level1-right {
+            display: flex;
+            .level1-right1 {
+              
+              color: #DE5454;
+              margin: 0 15px;
+              flex: 1;
+              font-size: 24px;
+              font-weight: 500;
+            }
+            .level1-right2 {
+              margin: 0 15px;
+              color: #C46078;
+              flex: 1;
+            }
+          }
+        }
+
+        
+        
+
+
+
+
+
+      }
+    }
+  }
+}
